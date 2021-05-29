@@ -468,7 +468,7 @@ input[type='file']::before {
 }
 
 .upload-handwriting-container {
-  margin-top: -1px;
+  margin-top: -10px;
   font-size: 15px;
 }
 
