@@ -1,0 +1,11 @@
+.glass-ui {
+    background: rgba(255, 255, 255, 0.205);
+    backdrop-filter: blur(5px);
+}
+
+h1{
+    display: flex;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}

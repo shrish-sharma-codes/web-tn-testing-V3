@@ -15,7 +15,7 @@ body {
   /* --box-shadow:  9px 9px 16px rgb(248, 113, 2), -9px -9px 16px rgba(255, 185, 116, 0.63); */
 }
 body.dark {
-  --background-primary: #1A1A1A;
+  --background-primary: #454545;
   --font-color-primary: #ccc;
   --elevation-background: #1d1d1d;
   --link-color: #09f;
@@ -114,17 +114,24 @@ body.dark {
 
 }
 
+@font-face {
+  font-family: "PSBold";
+  src: url(../Product\ Sans\ Bold\ 700.ttf);
+}
+
 /* Default CSS Changes */
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: var(--background-primary);
   color: var(--font-color-primary);
   padding: 100px 100px;
-  font-size: 1.05rem;
   font-family: var(--font-family-primary);
+  font-family: "PSBold";
 }
+
 a {
   text-decoration: none;
   color: var(--link-color);
@@ -140,10 +147,6 @@ button {
   border-radius: 6px;
   cursor: pointer;
   padding: 10px 20px;
-}
-
-h1 {
-  font-size: 3rem;
 }
 
 label {
@@ -465,7 +468,8 @@ input[type='file']::before {
 }
 
 .upload-handwriting-container {
-  margin-top: -10px;
+  margin-top: -1px;
+  font-size: 15px;
 }
 
 .experimental {
