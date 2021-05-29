@@ -1,7 +1,7 @@
 /* CSS Variables */
 body {
   --background-primary: linear-gradient(to bottom, #e55d87, #5fc3e4);
-  --font-color-primary: #333;
+  --font-color-primary: #fff;
   --elevation-background: #5fc3e4;
   --link-color: #006eb8;
   --font-family-primary: 'Roboto', cursive;
@@ -12,7 +12,8 @@ body {
   --field-borders: black;
   --primary-button-bg: linear-gradient(to right, #e55d87, #5fc3e4);
   --primary-button-color: #eee;
-  /* --box-shadow:  9px 9px 16px rgb(248, 113, 2), -9px -9px 16px rgba(255, 185, 116, 0.63); */
+  --box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  --toggle-bg: #abd7eb;
 }
 body.dark {
   --background-primary: linear-gradient(to bottom, #414345, #232526);
@@ -23,7 +24,8 @@ body.dark {
   --field-borders: white;
   --primary-button-bg: linear-gradient(to right, #414345, #232526);
   --primary-button-color: #fff;
-  /* --box-shadow:  9px 9px 16px #000, -9px -9px 16px    rgba(79, 79, 82, 0.6); */
+  --box-shadow: 0 8px 32px 0 rgba(241, 203, 203, 0.267);
+  --toggle-bg: #454545;
 }
 @font-face {
   font-family: 'Hindi_Font';
@@ -143,7 +145,7 @@ button {
   border: none;
   background-color: var(--elevation-background);
   color: var(--font-color-primary);
-  /* box-shadow: var(--box-shadow); */
+  box-shadow: var(--box-shadow);
   border-radius: 6px;
   cursor: pointer;
   padding: 10px 20px;
@@ -155,6 +157,7 @@ label {
 }
 
 label.block {
+  color: var(--font-color-primary);
   display: block;
   padding-bottom: 5px;
 }

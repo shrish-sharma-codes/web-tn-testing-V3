@@ -279,7 +279,7 @@
               </fieldset>
 
               <!-- Pen ink color, Font size, Vertical position text, Word Spacing -->
-              <fieldset>
+              <fieldset class="glass-ui">
                 <legend>Page & Text Options</legend>
 
                 <div class="category-grid">
@@ -328,7 +328,7 @@
                 </div>
               </fieldset>
 
-              <fieldset>
+              <fieldset class="glass-ui">
                 <legend>Spacing Options</legend>
 
                 <div class="category-grid">
@@ -348,7 +348,7 @@
               </fieldset>
 
               <!-- Letter spacing, Paper Margin, Paper Lines, Paper Curvature -->
-              <fieldset>
+              <fieldset class="glass-ui">
                 <legend>Margin & Line Options</legend>
 
                 <div class="category-grid">
@@ -399,14 +399,12 @@
                     <label
                       title="Paper Curve (Yet to be implemented)"
                       class="switch-toggle outer"
-                      style="cursor: not-allowed !important;"
-                    >
+                      style="cursor: not-allowed !important;">
                       <input
                         aria-checked="false"
                         aria-label="Paper Curve Button"
                         id="paper-curve-toggle"
-                        type="checkbox"
-                      />
+                        type="checkbox"/>
                       <div></div>
                     </label>
                   </div>
@@ -414,18 +412,11 @@
               </fieldset>
 
               <!-- GENERATE IMAGE BUTTONS -->
-              <hr
-                style="
-                  border: 0.3px solid var(--elevation-background);
-                  width: 80%;
-                "
-              />
               <div style="text-align: center; padding: 30px 0px;">
                 <button
                   type="submit"
                   data-testid="generate-image-button"
-                  class="button generate-image-button"
-                >
+                  class="button generate-image-button">
                 Create Assignment
                 </button>
               </div>
@@ -448,20 +439,19 @@
       </section>
     </main>
     <footer>
-      <strong>Convert Image to Text!</strong><br><br>
-      <button class="imp-button">
-        <a href="ocr_handler.html">OCR</a>
-      </button><br><br>
-       <p>
-        <!-- <strong>Accounts and Other</strong> &#x1F4F1; <br><br> -->
-        <!-- <button class="imp-button">
-          <a href="https://the-rebooted-coder.github.io/Take-Notes-Web/settings">Settings & More &#x2699;</a>
-        </button><br> -->
-
+      <h4>Other Options</h4>
+      <div class="more-options">
+        
+        <!-- OCR Button -->
+        <button class="imp-button ocr-btn">
+          <a href="ocr_handler.html">OCR</a>
+        </button>
+  
         <!-- Button trigger modal -->
         <button type="button" class="imp-button" data-toggle="modal" data-target="#exampleModalCenter">
           Settings & More &#x2699;
         </button>
+      </div>
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
