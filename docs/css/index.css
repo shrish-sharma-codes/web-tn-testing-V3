@@ -1,8 +1,8 @@
 /* CSS Variables */
 body {
-  --background-primary: linear-gradient(to bottom, #e55d87, #5fc3e4);;
+  --background-primary: linear-gradient(to bottom, #e55d87, #5fc3e4);
   --font-color-primary: #333;
-  --elevation-background: #7ec564;
+  --elevation-background: #5fc3e4;
   --link-color: #006eb8;
   --font-family-primary: 'Roboto', cursive;
   --handwriting-font: 'Homemade Apple', cursive;
@@ -10,19 +10,19 @@ body {
   --ink-color: #000f55;
   --label-color: #333;
   --field-borders: black;
-  --primary-button-bg: #1d1d1d;
+  --primary-button-bg: linear-gradient(to right, #e55d87, #5fc3e4);
   --primary-button-color: #eee;
   /* --box-shadow:  9px 9px 16px rgb(248, 113, 2), -9px -9px 16px rgba(255, 185, 116, 0.63); */
 }
 body.dark {
   --background-primary: linear-gradient(to bottom, #414345, #232526);
   --font-color-primary: #ccc;
-  --elevation-background: #1d1d1d;
+  --elevation-background: #454545;
   --link-color: #09f;
   --label-color: #aaa;
   --field-borders: white;
-  --primary-button-bg: #eee;
-  --primary-button-color: #111;
+  --primary-button-bg: linear-gradient(to right, #414345, #232526);
+  --primary-button-color: #fff;
   /* --box-shadow:  9px 9px 16px #000, -9px -9px 16px    rgba(79, 79, 82, 0.6); */
 }
 @font-face {
@@ -231,7 +231,7 @@ input[type='number'] {
   font-size: 1.2rem;
 }
 .generate-image-button {
-  background-color: var(--primary-button-bg);
+  background: var(--primary-button-bg);
   color: var(--primary-button-color);
   font-size: 1rem;
 }
