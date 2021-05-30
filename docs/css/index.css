@@ -16,7 +16,7 @@ body {
   --toggle-bg: #abd7eb;
 }
 body.dark {
-  --background-primary: linear-gradient(to bottom, #414345, #232526);
+  --background-primary: linear-gradient(to bottom, #000000, #0f9b0f); 
   --font-color-primary: #ccc;
   --elevation-background: #454545;
   --link-color: #09f;
