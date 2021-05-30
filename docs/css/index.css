@@ -10,7 +10,7 @@ body {
   --ink-color: #000f55;
   --label-color: #333;
   --field-borders: black;
-  --primary-button-bg: linear-gradient(to right, #e55d87, #5fc3e4);
+  --primary-button-bg: #5fc3e4;
   --primary-button-color: #eee;
   --box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   --toggle-bg: #abd7eb;
